@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/sebbe/Dropbox/Studie/Kurser/Matematik'
+let g:netrw_dirhist_2='/home/sebbe/Dropbox/Studie/Kurser/Matematik/Dis2'
+let g:netrw_dirhist_3='/home/sebbe/Dropbox/Studie/Kurser/Matematik/Dis2/Dis2'
+let g:netrw_dirhist_4='/home/sebbe/Dropbox/Studie/Kurser/Matematik/Dis2'
+let g:netrw_dirhist_5='/home/sebbe/Dropbox/Studie/Kurser/Matematik/Dis2/Afleveringer'
+let g:netrw_dirhist_6='/home/sebbe/Dropbox/Studie/Kurser/Matematik/Dis2/Afleveringer/4'
+let g:netrw_dirhist_7='/home/sebbe/Dropbox/code/python/convexhull/Algorithms'

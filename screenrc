@@ -1,0 +1,16 @@
+startup_message off
+
+# NetHack messages engage
+nethack on
+
+# no more "bell in window 1", Crassworm!!
+bell_msg ""
+
+# lines of scrollback!
+defscrollback 20000
+
+# quick esc timeout
+maptimeout 50
+
+# we want all the utf8 goodness
+defutf8 on

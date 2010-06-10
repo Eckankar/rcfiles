@@ -1,0 +1,13 @@
+[user]
+	email = Eckankar+github@gmail.com
+    name = Sebastian Paaske Tørholm
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+    keepBackup = false
+[github]
+    user = Eckankar
