@@ -80,4 +80,6 @@ fi
 # environment variables {{{
 # App::Nopaste
 export NOPASTE_SERVICES=Codepeek Pastie Gist PastebinCom
+# Default editor = vim
+export EDITOR=vim
 # }}}
