@@ -79,7 +79,7 @@ fi
 # }}}
 # environment variables {{{
 # App::Nopaste
-export NOPASTE_SERVICES=Codepeek Pastie Gist PastebinCom
+export NOPASTE_SERVICES='Codepeek Gist Pastie PastebinCom'
 # Default editor = vim
 export EDITOR=vim
 # }}}
