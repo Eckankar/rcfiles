@@ -83,3 +83,7 @@ export NOPASTE_SERVICES='Codepeek Gist Pastie PastebinCom'
 # Default editor = vim
 export EDITOR=vim
 # }}}
+# keybinds {{{
+# Fix delete key in PuTTY
+bindkey -v '^[[3~' delete-char
+# }}}
