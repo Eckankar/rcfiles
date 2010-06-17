@@ -259,9 +259,6 @@ let g:Foldtext_tex_enable = 1
 let g:Foldtext_cpp_enable = 1
 let g:Foldtext_perl_enable = 1
 " }}}
-" SuperTab {{{
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-" }}}
 " }}}
 " icfp {{{
 au BufNewFile,BufReadPost *.asl set ft=ruby
