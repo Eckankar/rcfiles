@@ -56,6 +56,9 @@ set lazyredraw
 " highlight all matches, we'll see if this works with a different hilight
 set hlsearch
 
+" clear search highlighting with space
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 " highlight matching parens for .2s
 set showmatch
 set matchtime=2
