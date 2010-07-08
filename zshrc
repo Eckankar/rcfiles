@@ -84,6 +84,9 @@ export NOPASTE_SERVICES='Codepeek Gist Pastie PastebinCom'
 export EDITOR=vim
 # }}}
 # keybinds {{{
-# Fix delete key in PuTTY
+# Fix a few keys in putty
+bindkey -v '^[[1~' beginning-of-line
+bindkey -v '^[[2~' overwrite-mode
 bindkey -v '^[[3~' delete-char
+bindkey -v '^[[4~' end-of-line
 # }}}
