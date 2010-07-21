@@ -228,6 +228,9 @@ autocmd FileType haskell setlocal makeprg=ghci\ '%'
 autocmd FileType tex setlocal makeprg=pdflatex\ '%'
 " }}}
 "}}}
+" Automatically reload vimrc on changes {{{
+autocmd bufwritepost .vimrc source $MYVIMRC
+" }}}
 "}}}
 " Insert-mode remappings/abbreviations {{{
 " Hit <C-a> in insert mode after a bad paste (thanks absolon) {{{
@@ -238,7 +241,7 @@ set pastetoggle=<F12>
 " }}}
 " }}}
 " Functions {{{
-fun Modulify(replace)
+fun! Modulify(replace)
     exec "/Foo"
     silent :.s#Foo#\=expand("%")#
     silent :.s#\.pm;#;#
