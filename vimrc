@@ -222,7 +222,19 @@ autocmd FileType sml setlocal makeprg=mosml\ -P\ full\ '%'
 autocmd FileType python setlocal makeprg=python\ '%'
 " }}}
 " Haskell make code {{{
-autocmd FileType haskell setlocal makeprg=ghci\ '%'
+augroup haskell
+    fun! HaskellIncrementCols()
+        let qflist = getqflist()
+        for i in qflist
+            let i.col += 1
+        endfor
+        call setqflist(qflist)
+    endfun
+
+    autocmd FileType haskell setlocal makeprg=ghci\ '%'
+    autocmd FileType haskell setlocal efm=%-G<interactive>:%.%#,%f:%l:%c:\ %m,%-G%.%#
+    autocmd FileType haskell autocmd QuickFixCmdPost make call HaskellIncrementCols()
+augroup end
 " }}}
 " LaTeX make code {{{
 autocmd FileType tex setlocal makeprg=pdflatex\ '%'
