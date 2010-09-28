@@ -164,6 +164,10 @@ set directory=/var/tmp/vim-sebbe
 "}}}
 " Colors {{{
 " miscellaneous {{{
+" enable 256-color mode
+set t_Co = 256
+
+" pick a lovely colorscheme
 colorscheme desert
 " }}}
 " word completion menu {{{
