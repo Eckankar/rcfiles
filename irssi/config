@@ -53,6 +53,13 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.inet.tele.dk";
+    chatnet = "EFNet";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
   }
 );
 
