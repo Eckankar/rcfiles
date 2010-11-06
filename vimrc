@@ -278,6 +278,9 @@ let g:Foldtext_tex_enable = 1
 let g:Foldtext_cpp_enable = 1
 let g:Foldtext_perl_enable = 1
 " }}}
+" Python highlighting {{{
+let python_highlight_all = 1
+" }}}
 " }}}
 " icfp {{{
 au BufNewFile,BufReadPost *.asl set ft=ruby
