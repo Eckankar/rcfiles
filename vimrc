@@ -241,7 +241,7 @@ augroup haskell
 augroup end
 " }}}
 " LaTeX make code {{{
-autocmd FileType tex setlocal makeprg=pdflatex\ '%'
+autocmd FileType tex setlocal makeprg=pdflatex\ --shell-escape\ '%'
 " }}}
 "}}}
 " Automatically reload vimrc on changes {{{
