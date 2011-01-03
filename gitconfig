@@ -12,4 +12,4 @@
 [github]
     user = Eckankar
 [push]
-    default = tracking
+    default = current
