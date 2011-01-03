@@ -11,3 +11,5 @@
     keepBackup = false
 [github]
     user = Eckankar
+[push]
+    default = tracking
