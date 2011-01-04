@@ -120,7 +120,7 @@ set wildmode=longest,list,full
 " persistent undo
 if exists("+undofile")
     set undofile
-    set undodir=~/.vim/undo
+    set undodir=/var/tmp/vim-sebbe/undo
 endif
 "}}}
 " Make vim less whiny {{{
@@ -173,8 +173,8 @@ set foldmethod=marker
 set foldclose=all
 "}}}
 " Swap files {{{
-set backupdir=/var/tmp/vim-sebbe
-set directory=/var/tmp/vim-sebbe
+set backupdir=/var/tmp/vim-sebbe/swap
+set directory=/var/tmp/vim-sebbe/swap
 " }}}
 "}}}
 " Colors {{{

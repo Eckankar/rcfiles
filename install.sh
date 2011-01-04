@@ -5,7 +5,8 @@ DIR=`pwd`
 echo Installing vim config...
 ln -fs $DIR/vimrc $HOME/.vimrc
 ln -fs $DIR/vim $HOME/.vim
-mkdir -p /var/tmp/vim-sebbe
+mkdir -p /var/tmp/vim-sebbe/swap
+mkdir -p /var/tmp/vim-sebbe/undo
 
 echo Installing zsh config...
 ln -fs $DIR/zshcomplete $HOME/.zshcomplete
