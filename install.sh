@@ -10,6 +10,7 @@ mkdir -p /var/tmp/vim-sebbe
 echo Installing zsh config...
 ln -fs $DIR/zshcomplete $HOME/.zshcomplete
 ln -fs $DIR/zshrc $HOME/.zshrc
+ln -fs $DIR/zshenv $HOME/.zshenv
 echo Setting default shell to zsh...
 chsh -s `which zsh`
 

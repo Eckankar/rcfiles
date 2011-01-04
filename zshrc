@@ -77,12 +77,6 @@ elif which fortune >/dev/null; then
     fortune
 fi
 # }}}
-# environment variables {{{
-# App::Nopaste
-export NOPASTE_SERVICES='Pastie Codepeek Gist PastebinCom'
-# Default editor = vim
-export EDITOR=vim
-# }}}
 # keybinds {{{
 bindkey -v
 
