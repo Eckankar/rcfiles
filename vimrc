@@ -15,6 +15,12 @@ set autoread
 
 " everything needs to be unicode. EVERYTHING
 set encoding=utf8
+
+" always join with just one space, even between sentences
+set nojoinspaces
+
+" don't move the cursor to the start of the line when changing buffers
+set nostartofline
 "}}}
 " Display {{{
 " color!
@@ -110,6 +116,12 @@ set isfname+=:
 
 " tab completion stuff for the command line
 set wildmode=longest,list,full
+
+" persistent undo
+if exists("+undofile")
+    set undofile
+    set undodir=~/.vim/undo
+endif
 "}}}
 " Make vim less whiny {{{
 " :bn with a change in the current buffer? no prob!
@@ -123,6 +135,9 @@ set confirm
 
 " 50 milliseconds for escape timeout instead of 1000
 set ttimeoutlen=50
+
+" send more data to the terminal in a way that makes the screen update faster
+set ttyfast
 "}}}
 " Indentation {{{
 " no-longer skinny tabs!
