@@ -63,13 +63,6 @@ alias clear='clear; fortune'
 alias less='less -R'
 alias wizmode='sudo /usr/games/nethack -D'
 # }}}
-# global shortcuts (don't need to be in the command position) {{{
-alias -g L='|vimpager'
-#alias -g G='|ack'
-alias -g H='|head'
-alias -g T='|tail'
-alias -g W='|wc'
-# }}}
 # fortune {{{
 if which fortune.pl >/dev/null; then
     fortune.pl
