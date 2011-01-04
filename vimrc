@@ -219,7 +219,7 @@ autocmd BufNewFile *.pl silent 0read ~/.vim/skeletons/perl.pl | normal G
 autocmd BufNewFile *.t silent 0read ~/.vim/skeletons/test.t | normal G
 autocmd BufNewFile Makefile.PL silent undo | silent 0read ~/.vim/skeletons/Makefile.PL | normal gg
 
-autocmd BufNewFile *.c  silent 0read ~/.vim/skeletons/c.c | normal 4j$
+autocmd BufNewFile *.c  silent 0read ~/.vim/skeletons/c.c | normal 3j$
 
 autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | normal G3k
 
