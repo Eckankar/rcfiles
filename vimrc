@@ -223,6 +223,8 @@ autocmd BufNewFile *.c  silent 0read ~/.vim/skeletons/c.c | normal 3j$
 
 autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | normal G3k
 
+autocmd BufNewFile *.cpp silent call CPPSkeleton()
+
 autocmd BufReadPost *.smc set bin | set noeol
 "}}}
 " Auto +x {{{
@@ -279,6 +281,16 @@ fun! Modulify(replace)
     silent :.s#lib/##e
     silent :.s# /# #e
     silent :.s#/#\=a:replace#ge
+endfun
+
+fun! CPPSkeleton()
+    if expand("%:p") =~? "usaco"
+        silent 0read ~/.vim/skeletons/usaco.cpp
+        silent :%s/<REPLACEME>/\=expand("%:t:r")/g
+    else
+        silent 0read ~/.vim/skeletons/standard.cpp
+    endif
+    normal G2k^
 endfun
 " }}}
 " Plugin settings {{{
