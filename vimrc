@@ -117,6 +117,9 @@ set isfname+=:
 " tab completion stuff for the command line
 set wildmode=longest,list,full
 
+" format using par
+set formatprg=par\ -w78
+
 " persistent undo
 if exists("+undofile")
     set undofile
