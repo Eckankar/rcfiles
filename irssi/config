@@ -60,6 +60,13 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
+  },
+  {
+    address = "Hamburg.DE.EU.undernet.org";
+    chatnet = "Undernet";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
   }
 );
 
@@ -311,7 +318,13 @@ ignores = (
 hilights = ( { text = "Sebbe"; nick = "yes"; word = "yes"; } );
 logs = { };
 windows = {
-  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  1 = {
+    immortal = "yes";
+    name = "(status)";
+    level = "ALL";
+    sticky = "yes";
+    parent = "5";
+  };
   2 = {
     items = (
       {
@@ -321,6 +334,8 @@ windows = {
         tag = "SynIRC";
       }
     );
+    sticky = "yes";
+    parent = "5";
   };
   3 = {
     items = (
@@ -331,18 +346,10 @@ windows = {
         tag = "SynIRC";
       }
     );
+    sticky = "yes";
+    parent = "5";
   };
   4 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#regex";
-        tag = "Undernet";
-      }
-    );
-  };
-  5 = {
     items = (
       {
         type = "CHANNEL";
@@ -351,8 +358,10 @@ windows = {
         tag = "PSIGenix";
       }
     );
+    sticky = "yes";
+    parent = "5";
   };
-  6 = {
+  5 = {
     items = (
       {
         type = "CHANNEL";
@@ -361,8 +370,9 @@ windows = {
         tag = "freenode";
       }
     );
+    sticky = "yes";
   };
-  7 = {
+  6 = {
     items = (
       {
         type = "CHANNEL";
@@ -371,8 +381,10 @@ windows = {
         tag = "freenode";
       }
     );
+    sticky = "yes";
+    parent = "5";
   };
-  8 = {
+  7 = {
     items = (
       {
         type = "CHANNEL";
@@ -381,8 +393,10 @@ windows = {
         tag = "freenode";
       }
     );
+    sticky = "yes";
+    parent = "5";
   };
-  9 = {
+  8 = {
     items = (
       {
         type = "CHANNEL";
@@ -391,8 +405,10 @@ windows = {
         tag = "freenode";
       }
     );
+    sticky = "yes";
+    parent = "5";
   };
-  10 = {
+  9 = {
     items = (
       {
         type = "CHANNEL";
@@ -402,7 +418,7 @@ windows = {
       }
     );
   };
-  11 = {
+  10 = {
     items = (
       {
         type = "CHANNEL";
@@ -411,10 +427,24 @@ windows = {
         tag = "QuickFox";
       }
     );
+    sticky = "yes";
+    parent = "5";
+  };
+  11 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#regex";
+        tag = "Undernet";
+      }
+    );
+    sticky = "yes";
+    parent = "5";
   };
   12 = { name = "hilight"; sticky = "yes"; };
 };
 mainwindows = {
-  6 = { first_line = "8"; lines = "52"; };
+  5 = { first_line = "8"; lines = "52"; };
   12 = { first_line = "1"; lines = "7"; };
 };
