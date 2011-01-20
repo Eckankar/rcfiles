@@ -299,7 +299,10 @@ settings = {
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
     bell_beeps = "yes";
   };
-  "perl/core/scripts" = { hilightwin_showprivmsg = "no"; };
+  "perl/core/scripts" = {
+    hilightwin_showprivmsg = "no";
+    nicklist_width = "22";
+  };
 };
 ignores = (
   {
