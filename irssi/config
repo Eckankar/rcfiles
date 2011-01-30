@@ -302,6 +302,7 @@ settings = {
   "perl/core/scripts" = {
     hilightwin_showprivmsg = "no";
     nicklist_width = "16";
+    nicklist_automode = "SCREEN";
   };
 };
 ignores = (
