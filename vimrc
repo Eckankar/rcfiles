@@ -301,7 +301,7 @@ fun! CHeaderSkeleton()
     silent 0read ~/.vim/skeletons/c.h
     let l:filename = substitute(expand("%:t"), "\\W", "_", "g")
     let l:uuid =  matchstr(system("uuidgen"), "\\w*")
-    silent :%s/<REPLACEME>/\=filename . "_" . uuid/g
+    silent :%s/<REPLACEME>/\=toupper(filename . "_" . uuid)/g
     normal G3k^
 endfun
 " }}}
