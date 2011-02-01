@@ -300,7 +300,7 @@ endfun
 fun! CHeaderSkeleton()
     silent 0read ~/.vim/skeletons/c.h
     let l:filename = expand("%:t")
-    let l:guardname = "_" . toupper(substitute(filename, "\\W", "_", "g"))
+    let l:guardname = toupper(substitute(filename, "\\W", "_", "g")) . "_GUARD"
     silent :%s/<REPLACEME>/\=guardname/g
     normal G3k^
 endfun
