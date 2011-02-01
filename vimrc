@@ -223,6 +223,7 @@ autocmd BufNewFile *.t silent 0read ~/.vim/skeletons/test.t | normal G
 autocmd BufNewFile Makefile.PL silent undo | silent 0read ~/.vim/skeletons/Makefile.PL | normal gg
 
 autocmd BufNewFile *.c  silent 0read ~/.vim/skeletons/c.c | normal 3j$
+autocmd BufNewFile *.h  silent call CHeaderSkeleton()
 
 autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | normal G3k
 
@@ -294,6 +295,14 @@ fun! CPPSkeleton()
         silent 0read ~/.vim/skeletons/standard.cpp
     endif
     normal G2k^
+endfun
+
+fun! CHeaderSkeleton()
+    silent 0read ~/.vim/skeletons/c.h
+    let l:filename = expand("%:t")
+    let l:guardname = "_" . toupper(substitute(filename, "\\W", "_", "g"))
+    silent :%s/<REPLACEME>/\=guardname/g
+    normal G3k^
 endfun
 " }}}
 " Plugin settings {{{
