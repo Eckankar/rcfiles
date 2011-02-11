@@ -80,3 +80,7 @@ bindkey '^[[4~' end-of-line
 # History search on ^R
 bindkey '^R' history-incremental-search-backward
 # }}}
+# utilities {{{
+# Enable autojump goodness
+.  /usr/share/autojump/autojump.zsh
+# }}}
