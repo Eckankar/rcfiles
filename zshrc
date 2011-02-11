@@ -41,8 +41,6 @@ alias top="htop"
 alias ls='ls -G --color'
 alias grep='grep --color=auto'
 alias ack='ack --color'
-export ACK_COLOR_FILENAME=clear
-export ACK_COLOR_MATCH=red
 # Such as Mathematica
 export XLIB_SKIP_ARGB_VISUALS=1
 # }}}
