@@ -225,7 +225,7 @@ autocmd BufNewFile Makefile.PL silent undo | silent 0read ~/.vim/skeletons/Makef
 autocmd BufNewFile *.c  silent 0read ~/.vim/skeletons/c.c | normal 3j$
 autocmd BufNewFile *.h  silent call CHeaderSkeleton()
 
-autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | normal G3k
+autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | set filetype=tex | normal G3k
 
 autocmd BufNewFile *.cpp silent call CPPSkeleton()
 
