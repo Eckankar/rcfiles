@@ -82,10 +82,5 @@ bindkey '^R' history-incremental-search-backward
 # }}}
 # utilities {{{
 # Enable autojump goodness
-# https://github.com/rupa/z
-. ~/build/z/z.sh
-function precmd () {
-  z --add "$(pwd -P)"
-}
-alias j=z
+.  /usr/share/autojump/autojump.zsh
 # }}}
