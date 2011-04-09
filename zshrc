@@ -34,8 +34,9 @@ setopt interactivecomments # Allow comments even in the interactive shell
 setopt listpacked # column width doesn't have to be constant
 setopt complete_in_word # hitting tab on the f in Mafile does the right thing
 # }}}
-# replace default utilities {{{
+# aliases {{{
 alias top="htop"
+alias mosml="rlwrap mosml"
 # }}}
 # add color to some things {{{
 alias ls='ls -G --color'
