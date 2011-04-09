@@ -24,5 +24,8 @@ ln -fs $DIR/screenrc $HOME/.screenrc
 echo Installing irssi config...
 ln -fs $DIR/irssi $HOME/.irssi
 
+echo Installing ack config...
+ln -fs $DIR/ackrc $HOME/.ackrc
+
 echo All done!
 

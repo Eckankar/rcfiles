@@ -1,0 +1,2 @@
+# Add languages that aren't searched by ack
+--type-set=sml=.sml,.sig
