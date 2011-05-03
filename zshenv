@@ -10,3 +10,6 @@ export EDITOR=vim
 # Ack color settings
 export ACK_COLOR_FILENAME=clear
 export ACK_COLOR_MATCH=red
+
+# Include local config
+. ~/.zshenv.local
