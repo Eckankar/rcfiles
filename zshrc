@@ -50,6 +50,7 @@ alias nao="(TERM='rxvt'; telnet nethack.alt.org)"
 #alias termcast="telnet termcast.org"
 # }}}
 # shell accounts {{{
+alias fitpc="ssh sebbe@home.coq.dk -p 2306"
 alias galois="ssh m06spt@galois.math.ku.dk"
 alias shannon="ssh m06spt@shannon.math.ku.dk"
 alias brok="ssh -X sebbe@brok.diku.dk"
@@ -72,11 +73,16 @@ fi
 # keybinds {{{
 bindkey -v
 
-# Fix a few keys in putty
-bindkey '^[[1~' beginning-of-line
+# Fix a few keys
+if [[ $COLORTERM == 'gnome-terminal' ]] then
+    bindkey '^[OH' beginning-of-line
+    bindkey '^[OF' end-of-line
+else
+    bindkey '^[[1~' beginning-of-line
+    bindkey '^[[4~' end-of-line
+fi
 bindkey '^[[2~' overwrite-mode
 bindkey '^[[3~' delete-char
-bindkey '^[[4~' end-of-line
 
 # History search on ^R
 bindkey '^R' history-incremental-search-backward
