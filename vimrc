@@ -230,6 +230,8 @@ autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | set filetype=
 autocmd BufNewFile *.cpp silent call CPPSkeleton()
 
 autocmd BufReadPost *.smc set bin | set noeol
+
+autocmd BufReadPost *.sig silent set filetype=sml
 "}}}
 " Auto +x {{{
 au BufWritePost *.{sh,pl} silent exe "!chmod +x %"
