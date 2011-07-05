@@ -74,13 +74,14 @@ fi
 bindkey -v
 
 # Fix a few keys
-if [[ $COLORTERM == 'gnome-terminal' ]] then
-    bindkey '^[OH' beginning-of-line
-    bindkey '^[OF' end-of-line
-else
-    bindkey '^[[1~' beginning-of-line
-    bindkey '^[[4~' end-of-line
-fi
+# PuTTY:
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
+# Linux terminals
+bindkey '^[OH' beginning-of-line
+bindkey '^[OF' end-of-line
+
+# Common
 bindkey '^[[2~' overwrite-mode
 bindkey '^[[3~' delete-char
 
