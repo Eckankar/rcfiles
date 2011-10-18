@@ -237,7 +237,8 @@ autocmd BufNewFile *.cpp silent call CPPSkeleton()
 
 autocmd BufReadPost *.smc set bin | set noeol
 
-autocmd BufReadPost *.sig silent set filetype=sml
+autocmd BufReadPost *.sml silent set filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufReadPost *.sig silent set filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
 "}}}
 " Auto +x {{{
 au BufWritePost *.{sh,pl} silent exe "!chmod +x %"
