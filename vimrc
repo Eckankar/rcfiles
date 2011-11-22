@@ -250,7 +250,7 @@ autocmd FileType perl setlocal errorformat=%f:%l:%m
 autocmd FileType perl setlocal keywordprg=perldoc\ -f
 "}}}
 " SML make code {{{
-autocmd FileType sml setlocal makeprg=mosml\ -P\ full\ '%'
+autocmd FileType sml setlocal makeprg=rlwrap\ mosml\ -P\ full\ '%'
 " }}}
 " Python make code {{{
 autocmd FileType python setlocal makeprg=python\ '%'
