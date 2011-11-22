@@ -23,6 +23,16 @@ servers = (
     autoconnect = "yes";
   },
   {
+    address = "holmes.freenode.net";
+    chatnet = "freenode";
+    port = "6667";
+  },
+  {
+    address = "gibson.freenode.net";
+    chatnet = "freenode";
+    port = "6667";
+  },
+  {
     address = "irc.synirc.net";
     chatnet = "SynIRC";
     port = "6667";
@@ -125,7 +135,15 @@ channels = (
   },
   { name = "#quickfox"; chatnet = "QuickFox"; autojoin = "yes"; },
   { name = "#psystra"; chatnet = "QuickFox"; autojoin = "yes"; },
-  { name = "#regex"; chatnet = "Undernet"; autojoin = "yes"; }
+  { name = "#regex"; chatnet = "Undernet"; autojoin = "yes"; },
+  { name = "#eggsml"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#zomg_pwnies"; chatnet = "freenode"; autojoin = "yes"; },
+  {
+    name = "#zomg_pwnies_trusted";
+    chatnet = "freenode";
+    autojoin = "yes";
+    password = "#zomg_pwnies";
+  }
 );
 
 aliases = {
@@ -319,7 +337,16 @@ ignores = (
     channels = ( "#nethack" );
   }
 );
-hilights = ( { text = "Sebbe"; nick = "yes"; word = "yes"; } );
+hilights = (
+  { text = "Sebbe"; nick = "yes"; word = "yes"; },
+  {
+    text = "doodle\\.com";
+    color = "%m";
+    nick = "yes";
+    word = "yes";
+    regexp = "yes";
+  }
+);
 logs = { };
 windows = {
   1 = { 
