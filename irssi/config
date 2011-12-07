@@ -121,13 +121,10 @@ chatnets = {
 };
 
 channels = (
-  { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "#diku"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#nethack"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#sacketyhack"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#interhack"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#cobol"; chatnet = "SynIRC"; autojoin = "yes"; },
-  { name = "#letsplay"; chatnet = "SynIRC"; autojoin = "yes"; },
+  { name = "#nethack"; chatnet = "freenode"; autojoin = "no"; },
+  { name = "#sacketyhack"; chatnet = "freenode"; autojoin = "no"; },
+  { name = "#interhack"; chatnet = "freenode"; autojoin = "no"; },
   {
     name = "#maverick_zero's_test_dome";
     chatnet = "PSIGenix";
