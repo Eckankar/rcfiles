@@ -346,49 +346,13 @@ hilights = (
 );
 logs = { };
 windows = {
-  1 = { 
+  1 = {
     immortal = "yes";
     name = "(status)";
     level = "ALL";
     sticky = "yes";
   };
   2 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#cobol";
-        tag = "SynIRC";
-      }
-    );
-    sticky = "yes";
-    parent = "1";
-  };
-  3 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#letsplay";
-        tag = "SynIRC";
-      }
-    );
-    sticky = "yes";
-    parent = "1";
-  };
-  4 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#maverick_zero's_test_dome";
-        tag = "PSIGenix";
-      }
-    );
-    sticky = "yes";
-    parent = "1";
-  };
-  5 = {
     items = (
       {
         type = "CHANNEL";
@@ -400,43 +364,43 @@ windows = {
     sticky = "yes";
     parent = "1";
   };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#eggsml";
+        tag = "freenode";
+      }
+    );
+    sticky = "yes";
+    parent = "1";
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#zomg_pwnies";
+        tag = "freenode";
+      }
+    );
+    sticky = "yes";
+    parent = "1";
+  };
+  5 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#maverick_zero's_test_dome";
+        tag = "PSIGenix";
+      }
+    );
+    sticky = "yes";
+    parent = "1";
+  };
   6 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#nethack";
-        tag = "freenode";
-      }
-    );
-    sticky = "yes";
-    parent = "1";
-  };
-  7 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#sacketyhack";
-        tag = "freenode";
-      }
-    );
-    sticky = "yes";
-    parent = "1";
-  };
-  8 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#interhack";
-        tag = "freenode";
-      }
-    );
-    sticky = "yes";
-    parent = "1";
-  };
-  9 = {
     items = (
       {
         type = "CHANNEL";
@@ -445,8 +409,10 @@ windows = {
         tag = "QuickFox";
       }
     );
+    sticky = "yes";
+    parent = "1";
   };
-  10 = {
+  7 = {
     items = (
       {
         type = "CHANNEL";
@@ -458,7 +424,7 @@ windows = {
     sticky = "yes";
     parent = "1";
   };
-  11 = {
+  8 = {
     items = (
       {
         type = "CHANNEL";
@@ -470,9 +436,9 @@ windows = {
     sticky = "yes";
     parent = "1";
   };
-  12 = { name = "hilight"; sticky = "yes"; };
+  9 = { name = "hilight"; sticky = "yes"; };
 };
 mainwindows = {
-  1 = { first_line = "8"; lines = "52"; };
-  12 = { first_line = "1"; lines = "7"; };
+  2 = { first_line = "8"; lines = "52"; };
+  9 = { first_line = "1"; lines = "7"; };
 };
