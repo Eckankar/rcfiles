@@ -320,7 +320,7 @@ fun! CHeaderSkeleton()
 endfun
 
 fun! SaveAsSudo()
-    silent verbose :w !sudo tee %
+    silent :w !sudo tee %
     silent :e!
     " TODO: Make it show normal output shown on :w
 endfun
