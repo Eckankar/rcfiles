@@ -179,6 +179,10 @@ set foldclose=all
 set backupdir=/var/tmp/vim-sebbe/swap
 set directory=/var/tmp/vim-sebbe/swap
 " }}}
+" Added commands {{{
+" Use w!! to write as sudo
+cmap w!! w !sudo tee >/dev/null %
+" }}}
 "}}}
 " Colors {{{
 " miscellaneous {{{
