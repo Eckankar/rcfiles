@@ -351,6 +351,7 @@ windows = {
     name = "(status)";
     level = "ALL";
     sticky = "yes";
+    parent = "3";
   };
   2 = {
     items = (
@@ -362,7 +363,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "3";
   };
   3 = {
     items = (
@@ -374,7 +375,6 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
   };
   4 = {
     items = (
@@ -386,7 +386,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "3";
   };
   5 = {
     items = (
@@ -398,7 +398,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "3";
   };
   6 = {
     items = (
@@ -410,7 +410,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "3";
   };
   7 = {
     items = (
@@ -422,9 +422,21 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "3";
   };
   8 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#zomg_pwnies_trusted";
+        tag = "freenode";
+      }
+    );
+    sticky = "yes";
+    parent = "3";
+  };
+  9 = {
     items = (
       {
         type = "CHANNEL";
@@ -434,11 +446,11 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "3";
   };
-  9 = { name = "hilight"; sticky = "yes"; };
+  10 = { name = "hilight"; sticky = "yes"; };
 };
 mainwindows = {
-  2 = { first_line = "8"; lines = "52"; };
-  9 = { first_line = "1"; lines = "7"; };
+  3 = { first_line = "8"; lines = "52"; };
+  10 = { first_line = "1"; lines = "7"; };
 };
