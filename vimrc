@@ -181,7 +181,8 @@ set directory=/var/tmp/vim-sebbe/swap
 " }}}
 " Added commands {{{
 " Use w!! to write as sudo
-cmap w!! w !sudo tee >/dev/null %
+command -nargs=0 SudoWrite call SaveAsSudo()
+cmap w!! SudoWrite
 " }}}
 "}}}
 " Colors {{{
@@ -316,6 +317,12 @@ fun! CHeaderSkeleton()
     let l:uuid =  matchstr(system("uuidgen"), "\\w*")
     silent :%s/<REPLACEME>/\=toupper(filename . "_" . uuid)/g
     normal G3k^
+endfun
+
+fun! SaveAsSudo()
+    silent verbose :w !sudo tee %
+    silent :e!
+    " TODO: Make it show normal output shown on :w
 endfun
 " }}}
 " Plugin settings {{{
