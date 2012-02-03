@@ -189,6 +189,8 @@ aliases = {
   "MANUAL-WINDOWS" = "set use_status_window off;set autocreate_windows off;set autocreate_query_level none;set autoclose_windows off;set reuse_unused_windows on;save";
   EXEMPTLIST = "mode $C +e";
   ATAG = "WINDOW SERVER";
+  USJOV = "say concieggs: det er jo ikke sjovt";
+  SJOV = "say concieggs: det er faktisk ret sjovt";
 };
 
 statusbar = {
