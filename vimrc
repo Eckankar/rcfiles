@@ -282,6 +282,11 @@ autocmd FileType tex setlocal makeprg=pdflatex\ --shell-escape\ '%'
 " Automatically reload vimrc on changes {{{
 autocmd bufwritepost .vimrc source $MYVIMRC
 " }}}
+" Enable spelling correction {{{
+if exists("+spell")
+    setlocal spell spelllang=en
+endif
+" }}}
 "}}}
 " Insert-mode remappings/abbreviations {{{
 " Hit <C-a> in insert mode after a bad paste (thanks absolon) {{{
