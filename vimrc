@@ -181,7 +181,7 @@ set directory=/var/tmp/vim-sebbe/swap
 " }}}
 " Added commands {{{
 " Use w!! to write as sudo
-command -nargs=0 SudoWrite call SaveAsSudo()
+command! -nargs=0 SudoWrite call SaveAsSudo()
 cmap w!! SudoWrite
 " }}}
 "}}}
