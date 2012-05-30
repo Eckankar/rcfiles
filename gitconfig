@@ -13,3 +13,5 @@
     user = Eckankar
 [push]
     default = current
+[alias]
+    pul = pull
