@@ -19,7 +19,7 @@ sudo rm -rf dvips/Frederiksberg tex/latex/beamer/Frederiksberg texmf
 sudo tar xfvz "$MAINPKG"
 # Install units
 sudo tar xfvz "$ICS"
-sudo unzip $IMF
+sudo unzip "$IMF"
 
 # Rehash tex
 sudo texhash
