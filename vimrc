@@ -244,6 +244,8 @@ autocmd BufReadPost *.smc set bin | set noeol
 
 autocmd BufReadPost *.sml silent set filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
 autocmd BufReadPost *.sig silent set filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
+
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=perl | endif
 "}}}
 " Auto +x {{{
 au BufWritePost *.{sh,pl} silent exe "!chmod +x %"
@@ -259,21 +261,6 @@ autocmd FileType sml setlocal makeprg=rlwrap\ mosml\ -P\ full\ '%'
 " }}}
 " Python make code {{{
 autocmd FileType python setlocal makeprg=python\ '%'
-" }}}
-" Haskell make code {{{
-augroup haskell
-    fun! HaskellIncrementCols()
-        let qflist = getqflist()
-        for i in qflist
-            let i.col += 1
-        endfor
-        call setqflist(qflist)
-    endfun
-
-    autocmd FileType haskell setlocal makeprg=ghci\ '%'
-    autocmd FileType haskell setlocal efm=%-G<interactive>:%.%#,%f:%l:%c:\ %m,%-G%.%#
-    autocmd FileType haskell autocmd QuickFixCmdPost make call HaskellIncrementCols()
-augroup end
 " }}}
 " LaTeX make code {{{
 autocmd FileType tex setlocal makeprg=pdflatex\ --shell-escape\ '%'
@@ -339,6 +326,13 @@ let g:Foldtext_perl_enable = 1
 " }}}
 " Python highlighting {{{
 let python_highlight_all = 1
+" }}}
+" haskell {{{
+" haskell-mode
+au BufEnter *.hs compiler ghc
+let g:haddock_browser="/usr/bin/lynx"
+" ghc-mod
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 " }}}
 " }}}
 " icfp {{{
