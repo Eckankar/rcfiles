@@ -28,5 +28,8 @@ ln -Tfs $DIR/irssi $HOME/.irssi
 echo Installing ack config...
 ln -Tfs $DIR/ackrc $HOME/.ackrc
 
+echo Installing scripts...
+ln -Tfs $DIR/bin/build-vim $HOME/bin/build-vim
+
 echo All done!
 
