@@ -29,6 +29,7 @@ echo Installing ack config...
 ln -Tfs $DIR/ackrc $HOME/.ackrc
 
 echo Installing scripts...
+mkdir -p $HOME/bin
 ln -Tfs $DIR/bin/build-vim $HOME/bin/build-vim
 
 echo All done!
