@@ -214,6 +214,8 @@ hi EOLWS ctermbg=red
 " }}}
 " highlight line 81 for IP {{{
 if expand("%:p") =~? "Instruktorater/IP"
+    set listchars=tab:>-
+    set list
     set textwidth=80
     set colorcolumn=+1
 endif
