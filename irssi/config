@@ -139,7 +139,6 @@ channels = (
     name = "#zomg_pwnies_trusted";
     chatnet = "freenode";
     autojoin = "yes";
-    password = "#zomg_pwnies";
   }
 );
 
