@@ -1,0 +1,4 @@
+#!/bin/bash
+git config github.user Bjerregaard
+git commit --author="Martin Bjerregaard Jepsen <martin@jepsen.no>" "$@"
+git config github.user $GITHUB_USER

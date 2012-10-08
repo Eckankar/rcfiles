@@ -15,3 +15,4 @@
     default = current
 [alias]
     pul = pull
+    shitcommit = !git-shitcommit

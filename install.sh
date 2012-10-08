@@ -31,6 +31,7 @@ ln -Tfs $DIR/ackrc $HOME/.ackrc
 echo Installing scripts...
 mkdir -p $HOME/bin
 ln -Tfs $DIR/bin/build-vim $HOME/bin/build-vim
+ln -Tfs $DIR/bin/git-shitcommit $HOME/bin/git-shitcommit
 
 echo All done!
 
