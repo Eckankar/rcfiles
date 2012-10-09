@@ -238,16 +238,16 @@ autocmd BufNewFile Makefile.PL silent undo | silent 0read ~/.vim/skeletons/Makef
 autocmd BufNewFile *.c  silent 0read ~/.vim/skeletons/c.c | normal 3j$
 autocmd BufNewFile *.h  silent call CHeaderSkeleton()
 
-autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | set filetype=tex | normal G3k
+autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | setlocal filetype=tex | normal G3k
 
 autocmd BufNewFile *.cpp silent call CPPSkeleton()
 
-autocmd BufReadPost *.smc set bin | set noeol
+autocmd BufReadPost *.smc setlocal bin | setlocal noeol
 
-autocmd BufReadPost *.sml silent set filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
-autocmd BufReadPost *.sig silent set filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufReadPost *.sml silent setlocal filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufReadPost *.sig silent setlocal filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
 
-autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=perl | endif
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | setlocal syntax=perl | endif
 "}}}
 " Auto +x {{{
 au BufWritePost *.{sh,pl} silent exe "!chmod +x %"
