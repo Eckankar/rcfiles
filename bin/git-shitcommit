@@ -1,4 +1,13 @@
 #!/bin/bash
-git config --global github.user Bjerregaard
-git commit --author="Martin Bjerregaard Jepsen <martin@jepsen.no>" "$@"
-git config --global github.user $GITHUB_USER
+GIT_USERNAME=`git config user.name`
+GIT_EMAIL=`git config user.email`
+
+git config github.user Athas
+git config user.name "Troels Henriksen"
+git config user.email "athas@sigkill.dk"
+
+git commit "$@"
+
+git config github.user "$GITHUB_USER"
+git config user.name "$GIT_USERNAME"
+git config user.email "$GIT_EMAIL"
