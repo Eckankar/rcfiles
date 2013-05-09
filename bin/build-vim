@@ -7,7 +7,7 @@ hg update -C
 
 ./configure --without-x --disable-gui --disable-xim --disable-darwin\
             --enable-perlinterp --enable-pythoninterp --enable-multibyte\
-            --with-python
+            --with-python --enable-profile
 make
 
 sudo make install
