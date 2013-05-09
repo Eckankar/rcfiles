@@ -1,5 +1,5 @@
 # Add my local ~/bin to path
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/.cabal/bin:$PATH
 
 # App::Nopaste
 export NOPASTE_SERVICES='Pastie Codepeek Gist PastebinCom'
