@@ -15,7 +15,7 @@ cabal install ghc-mod hlint
 echo "Installing vimproc..."
 mkdir -p ~/build
 cd ~/build
-git clone git@github.com:Shougo/vimproc.git
+git clone https://github.com/Shougo/vimproc.vim.git vimproc
 cd vimproc
 make -f make_unix.mak
 
