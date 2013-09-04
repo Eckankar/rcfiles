@@ -10,7 +10,8 @@ echo "Updating cabal..."
 cabal update
 
 echo "Installing needed cabal packages..."
-cabal install ghc-mod hlint
+export PATH=~/.cabal/bin:$PATH
+cabal install happy ghc-mod hlint
 
 echo "Installing vimproc..."
 mkdir -p ~/build
