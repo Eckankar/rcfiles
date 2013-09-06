@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 package Foo;
-use strict;
+use 5.012;
 use warnings;
 
 
