@@ -1,5 +1,18 @@
 " vim:foldmethod=marker commentstring="%s
 
+" Vundle bundles {{{
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Enhanced twelf syntax highlighting
+Bundle 'ahf/twelf-syntax'
+" }}}
 " General options {{{
 " Miscellaneous {{{
 set nocompatible
