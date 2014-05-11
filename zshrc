@@ -39,6 +39,7 @@ setopt complete_in_word # hitting tab on the f in Mafile does the right thing
 alias top="htop"
 alias mosml="rlwrap mosml"
 alias mosml201="rlwrap ~/build/mosml201/bin/mosml"
+alias twelf-server="rlwrap twelf-server"
 # }}}
 # add color to some things {{{
 alias ls='ls -G --color'
