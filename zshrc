@@ -42,7 +42,7 @@ alias mosml201="rlwrap ~/build/mosml201/bin/mosml"
 alias twelf-server="rlwrap twelf-server"
 # }}}
 # add color to some things {{{
-alias ls='ls -G --color'
+alias ls='ls -h --color'
 alias grep='grep --color=auto'
 alias ack='ack --color'
 # Such as Mathematica
