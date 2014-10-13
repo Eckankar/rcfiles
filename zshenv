@@ -11,5 +11,8 @@ export EDITOR=vim
 export ACK_COLOR_FILENAME=clear
 export ACK_COLOR_MATCH=red
 
+# GPG, please use this TTY, kthx
+export GPG_TTY=$(tty)
+
 # Include local config
 . ~/.zshenv.local
