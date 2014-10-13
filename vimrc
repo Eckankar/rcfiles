@@ -12,6 +12,10 @@ Bundle 'gmarik/vundle'
 
 " Enhanced twelf syntax highlighting
 Bundle 'ahf/twelf-syntax'
+
+" Syntax checking for a number of languages
+Bundle 'scrooloose/syntastic'
+
 " }}}
 " General options {{{
 " Miscellaneous {{{
