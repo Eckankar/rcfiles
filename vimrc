@@ -16,6 +16,9 @@ Bundle 'ahf/twelf-syntax'
 " Syntax checking for a number of languages
 Bundle 'scrooloose/syntastic'
 
+" git-support for vim
+Bundle 'tpope/vim-fugitive'
+
 " }}}
 " General options {{{
 " Miscellaneous {{{
