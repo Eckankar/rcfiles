@@ -18,3 +18,7 @@ defutf8 on
 # status line
 hardstatus on
 hardstatus alwayslastline '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
+# don't lock my screen - ever!
+bind x echo "Won't lock!"
+bind ^X echo "Won't lock!"
