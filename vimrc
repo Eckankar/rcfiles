@@ -362,6 +362,10 @@ let g:haddock_browser="/usr/bin/lynx"
 " ghc-mod
 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 " }}}
+" syntastic {{{
+" let's get a bit less pylint, please
+let g:syntastic_python_checkers = ['python']
+" }}}
 " }}}
 " icfp {{{
 au BufNewFile,BufReadPost *.asl set ft=ruby
