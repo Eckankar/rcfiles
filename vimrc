@@ -273,7 +273,7 @@ autocmd BufReadPost *.smc setlocal bin | setlocal noeol
 autocmd BufReadPost *.sml silent setlocal filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
 autocmd BufReadPost *.sig silent setlocal filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
 
-autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | setlocal syntax=perl | endif
+autocmd BufNewFile,BufRead * if &syntax == '' | setlocal syntax=perl | endif
 "}}}
 " Auto +x {{{
 au BufWritePost *.{sh,pl} silent exe "!chmod +x %"
