@@ -46,7 +46,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "irc.quickfox.net";
@@ -122,24 +122,13 @@ chatnets = {
 
 channels = (
   { name = "#diku"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#eggsml"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#eggsml-maskinrum"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#dikurevy"; chatnet = "freenode"; autojoin = "yes"; }
   { name = "#nethack"; chatnet = "freenode"; autojoin = "no"; },
-  { name = "#sacketyhack"; chatnet = "freenode"; autojoin = "no"; },
-  { name = "#interhack"; chatnet = "freenode"; autojoin = "no"; },
-  {
-    name = "#maverick_zero's_test_dome";
-    chatnet = "PSIGenix";
-    autojoin = "yes";
-  },
   { name = "#quickfox"; chatnet = "QuickFox"; autojoin = "yes"; },
   { name = "#psystra"; chatnet = "QuickFox"; autojoin = "yes"; },
   { name = "#regex"; chatnet = "Undernet"; autojoin = "yes"; },
-  { name = "#eggsml"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#zomg_pwnies"; chatnet = "freenode"; autojoin = "yes"; },
-  {
-    name = "#zomg_pwnies_trusted";
-    chatnet = "freenode";
-    autojoin = "yes";
-  }
 );
 
 aliases = {
@@ -340,7 +329,16 @@ ignores = (
     channels = ( "#nethack" );
   }
 );
-hilights = ( { text = "Sebbe"; nick = "yes"; word = "yes"; } );
+hilights = (
+  { text = "Sebbe"; nick = "yes"; word = "yes"; },
+  {
+    text = "GOGDeals!*@*";
+    nick = "yes";
+    word = "yes";
+    mask = "yes";
+    channels = ( "#gogdeals" );
+  }
+);
 logs = { };
 windows = {
   1 = {
@@ -378,7 +376,7 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#zomg_pwnies";
+        name = "#dikurevy";
         tag = "freenode";
       }
     );
@@ -390,8 +388,8 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#maverick_zero's_test_dome";
-        tag = "PSIGenix";
+        name = "#eggsml-maskinrum";
+        tag = "freenode";
       }
     );
     sticky = "yes";
@@ -422,18 +420,6 @@ windows = {
     parent = "3";
   };
   8 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#zomg_pwnies_trusted";
-        tag = "freenode";
-      }
-    );
-    sticky = "yes";
-    parent = "3";
-  };
-  9 = {
     items = (
       {
         type = "CHANNEL";
