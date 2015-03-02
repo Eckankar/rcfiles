@@ -1,2 +1,3 @@
 # Add languages that aren't searched by ack
---type-set=sml=.sml,.sig,.lex,.grm
+--type-add=sml:ext:sml,sig,lex,grm
+--type-add=text:ext:txt

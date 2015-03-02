@@ -40,6 +40,7 @@ alias top="htop"
 alias mosml="rlwrap mosml"
 alias mosml201="rlwrap ~/build/mosml201/bin/mosml"
 alias twelf-server="rlwrap twelf-server"
+alias screen="screen -U"
 # }}}
 # add color to some things {{{
 alias ls='ls -h --color'
