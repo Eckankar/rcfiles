@@ -19,6 +19,9 @@ Bundle 'scrooloose/syntastic'
 " git-support for vim
 Bundle 'tpope/vim-fugitive'
 
+" Syntax highlighting for hased
+Bundle 'Eckankar/hased-syntax.vim'
+
 " }}}
 " General options {{{
 " Miscellaneous {{{
