@@ -19,8 +19,21 @@ Plugin 'scrooloose/syntastic'
 " git-support for vim
 Plugin 'tpope/vim-fugitive'
 
-" Syntax highlighting for hased
-Bundle 'Eckankar/hased-syntax.vim'
+" Ragel syntax
+Plugin 'jneen/ragel.vim'
+
+" org-mode for vim
+Plugin 'hsitz/VimOrganizer'
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org            call org#SetOrgFileType()
+
+" Haskell integration
+Plugin 'Shougo/vimproc'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'lukerandall/haskellmode-vim'
+
+" Syntax highlighting for Kleenex 
+Plugin 'Eckankar/kleenex-syntax.vim'
 
 " }}}
 " General options {{{
@@ -363,7 +376,7 @@ let python_highlight_all = 1
 au BufEnter *.hs compiler ghc
 let g:haddock_browser="/usr/bin/lynx"
 " ghc-mod
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+" autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 " }}}
 " syntastic {{{
 " let's get a bit less pylint, please
