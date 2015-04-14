@@ -4,20 +4,20 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Enhanced twelf syntax highlighting
-Bundle 'ahf/twelf-syntax'
+Plugin 'ahf/twelf-syntax'
 
 " Syntax checking for a number of languages
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " git-support for vim
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " Syntax highlighting for hased
 Bundle 'Eckankar/hased-syntax.vim'
