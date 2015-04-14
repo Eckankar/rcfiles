@@ -35,6 +35,8 @@ Plugin 'lukerandall/haskellmode-vim'
 " Syntax highlighting for Kleenex 
 Plugin 'Eckankar/kleenex-syntax.vim'
 
+call vundle#end()
+
 " }}}
 " General options {{{
 " Miscellaneous {{{
@@ -373,7 +375,7 @@ let python_highlight_all = 1
 " }}}
 " haskell {{{
 " haskell-mode
-au BufEnter *.hs compiler ghc
+"au BufEnter *.hs compiler ghc
 let g:haddock_browser="/usr/bin/lynx"
 " ghc-mod
 " autocmd BufWritePost *.hs GhcModCheckAndLintAsync
