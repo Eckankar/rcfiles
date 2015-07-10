@@ -32,8 +32,8 @@ Plugin 'Shougo/vimproc'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'lukerandall/haskellmode-vim'
 
-" Syntax highlighting for Kleenex 
-Plugin 'Eckankar/kleenex-syntax.vim'
+" Syntax highlighting for Kleenex
+Plugin 'diku-kmc/repg', {'rtp': 'vim/'}
 
 call vundle#end()
 
@@ -375,10 +375,13 @@ let python_highlight_all = 1
 " }}}
 " haskell {{{
 " haskell-mode
-"au BufEnter *.hs compiler ghc
+au BufEnter *.hs compiler ghc
 let g:haddock_browser="/usr/bin/lynx"
 " ghc-mod
-" autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+hi ghcmodType ctermbg=green ctermfg=black
+let g:ghcmod_type_highlight = 'ghcmodType'
+let g:syntastic_haskell_checkers=['']
 " }}}
 " syntastic {{{
 " let's get a bit less pylint, please
