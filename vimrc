@@ -252,8 +252,9 @@ highlight Folded     ctermbg=black ctermfg=darkgreen
 highlight Search NONE ctermfg=lightred
 "}}}
 " color end of line whitespace {{{
-autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
-autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
+autocmd BufReadPost * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/ containedin=ALL
+autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/ containedin=ALL
+autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/ containedin=ALL
 hi EOLWS ctermbg=red
 " }}}
 " highlight line 81 for IP {{{
