@@ -357,6 +357,13 @@ fun! SaveAsSudo()
     silent :e!
     " TODO: Make it show normal output shown on :w
 endfun
+
+fun! KexHighlight()
+    normal! gvy
+    let @0 = system('~/Dropbox/Studie/Kurser/Datalogi/Speciale/thesis/tools/syntax_latex', @0)
+endfun
+
+vmap <F11> :call KexHighlight()<CR>
 " }}}
 " Plugin settings {{{
 " Textobj {{{
