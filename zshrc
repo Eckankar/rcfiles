@@ -91,6 +91,9 @@ bindkey '^[[3~' delete-char
 
 # History search on ^R
 bindkey '^R' history-incremental-search-backward
+
+# Don't freeze my terminal with Ctrl-S, please. Kthx.
+stty -ixon -ixoff
 # }}}
 # utilities {{{
 # Enable autojump goodness
