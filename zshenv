@@ -2,7 +2,7 @@
 export PATH=~/bin:~/.cabal/bin:$PATH
 
 # App::Nopaste
-export NOPASTE_SERVICES='Pastie Codepeek Gist PastebinCom'
+export NOPASTE_SERVICES='Pastie Ubuntu Gist PastebinCom'
 
 # Default editor = vim
 export EDITOR=vim
