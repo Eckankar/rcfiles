@@ -8,7 +8,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " Let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " Enhanced twelf syntax highlighting
 Plugin 'ahf/twelf-syntax'
