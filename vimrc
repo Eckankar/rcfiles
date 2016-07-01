@@ -268,6 +268,10 @@ if expand("%:p") =~? "Instruktorater/IP"
     set colorcolumn=+1
 endif
 " }}}
+" highlight tabs in source files {{{
+set listchars=tab:>-
+set list
+" }}}
 "}}}
 " Autocommands {{{
 " When editing a file, always jump to the last cursor position {{{
