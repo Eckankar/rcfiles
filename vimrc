@@ -35,6 +35,9 @@ Plugin 'lukerandall/haskellmode-vim'
 " Syntax highlighting for Kleenex
 Plugin 'diku-kmc/repg', {'rtp': 'vim/'}
 
+" Rust syntax
+Plugin 'rust-lang/rust.vim'
+
 call vundle#end()
 
 " }}}
