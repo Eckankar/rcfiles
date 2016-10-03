@@ -305,6 +305,9 @@ autocmd BufNewFile,BufRead * if &syntax == '' | setlocal syntax=perl | endif
 au BufWritePost *.{sh,pl} silent exe "!chmod +x %"
 "}}}
 " :make commands {{{
+" No pressing enter after make {{{
+cabbrev make call MakeNoEnter()
+" }}}
 " Perl :make does a syntax check {{{
 autocmd FileType perl setlocal makeprg=$VIMRUNTIME/tools/efm_perl.pl\ -c\ %\ $*
 autocmd FileType perl setlocal errorformat=%f:%l:%m
@@ -364,6 +367,11 @@ fun! SaveAsSudo()
     silent :w !sudo tee %
     silent :e!
     " TODO: Make it show normal output shown on :w
+endfun
+
+fun! MakeNoEnter()
+    silent :make
+    redraw!
 endfun
 
 fun! KexHighlight()
