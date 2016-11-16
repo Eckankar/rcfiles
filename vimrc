@@ -38,6 +38,9 @@ Plugin 'diku-kmc/repg', {'rtp': 'vim/'}
 " Rust syntax
 Plugin 'rust-lang/rust.vim'
 
+" F* support
+Plugin 'FStarLang/VimFStar'
+
 call vundle#end()
 
 " }}}
