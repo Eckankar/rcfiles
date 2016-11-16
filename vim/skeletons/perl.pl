@@ -1,4 +1,4 @@
 #!/usr/bin/env perl
-use 5.012;
+use 5.022;
 use warnings;
 
