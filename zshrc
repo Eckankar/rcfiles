@@ -65,7 +65,6 @@ alias i='sudo apt-get install'
 alias s='apt-cache search'
 alias clear='clear; fortune'
 alias less='less -R'
-alias wizmode='sudo /usr/games/nethack -D'
 # }}}
 # fortune {{{
 if which fortune.pl >/dev/null; then
