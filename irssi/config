@@ -77,6 +77,14 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
+  },
+  {
+    address = "irc.perl.org";
+    chatnet = "Perl";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
   }
 );
 
@@ -118,17 +126,25 @@ chatnets = {
   SynIRC = { type = "IRC"; nick = "Sebbe"; };
   PSIGenix = { type = "IRC"; nick = "Sebbe"; };
   QuickFox = { type = "IRC"; nick = "Sebbe"; };
+  Perl = { type = "IRC"; nick = "Sebbe"; };
 };
 
 channels = (
   { name = "#diku"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#eggsml"; chatnet = "freenode"; autojoin = "yes"; }
-  { name = "#eggsml-maskinrum"; chatnet = "freenode"; autojoin = "yes"; }
-  { name = "#dikurevy"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#eggsml"; chatnet = "freenode"; autojoin = "yes"; },
+  { 
+    name = "#eggsml-maskinrum";
+    chatnet = "freenode";
+    autojoin = "yes";
+  },
+  { name = "#dikurevy"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#nethack"; chatnet = "freenode"; autojoin = "no"; },
   { name = "#quickfox"; chatnet = "QuickFox"; autojoin = "yes"; },
   { name = "#psystra"; chatnet = "QuickFox"; autojoin = "yes"; },
   { name = "#regex"; chatnet = "Undernet"; autojoin = "yes"; },
+  { name = "#mojo"; chatnet = "Perl"; autojoin = "yes"; },
+  { name = "#p5p"; chatnet = "Perl"; autojoin = "yes"; },
+  { name = "#cph.pm"; chatnet = "Perl"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -295,7 +311,12 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Unknown"; user_name = "sebbe"; nick = "sebbe"; };
+  core = {
+    real_name = "Unknown";
+    user_name = "sebbe";
+    nick = "sebbe";
+    recode_autodetect_utf8 = "yes";
+  };
   "fe-text" = { 
     actlist_sort = "refnum";
     autostick_split_windows = "yes";
@@ -308,6 +329,7 @@ settings = {
     beep_when_away = "yes";
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
     bell_beeps = "yes";
+    term_charset = "utf-8";
   };
   "perl/core/scripts" = {
     hilightwin_showprivmsg = "no";
@@ -431,9 +453,9 @@ windows = {
     sticky = "yes";
     parent = "3";
   };
-  10 = { name = "hilight"; sticky = "yes"; };
+  20 = { name = "hilight"; sticky = "yes"; };
 };
 mainwindows = {
   3 = { first_line = "8"; lines = "52"; };
-  10 = { first_line = "1"; lines = "7"; };
+  20 = { first_line = "1"; lines = "7"; };
 };
