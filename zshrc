@@ -53,13 +53,6 @@ export XLIB_SKIP_ARGB_VISUALS=1
 alias nao="(TERM='rxvt'; telnet nethack.alt.org)"
 #alias termcast="telnet termcast.org"
 # }}}
-# shell accounts {{{
-alias fitpc="ssh sebbe@home.coq.dk -p 2306"
-alias galois="ssh m06spt@galois.math.ku.dk"
-alias shannon="ssh m06spt@shannon.math.ku.dk"
-alias brok="ssh -X sebbe@brok.diku.dk"
-alias ask="ssh -X sebbe@ask.diku.dk"
-# }}}
 # shortcuts {{{
 alias i='sudo apt-get install'
 alias s='apt-cache search'
