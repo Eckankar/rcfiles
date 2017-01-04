@@ -49,10 +49,6 @@ alias ack='ack --color'
 # Such as Mathematica
 export XLIB_SKIP_ARGB_VISUALS=1
 # }}}
-# telnet services (nao, termcast, etc) {{{
-alias nao="(TERM='rxvt'; telnet nethack.alt.org)"
-#alias termcast="telnet termcast.org"
-# }}}
 # shortcuts {{{
 alias i='sudo apt-get install'
 alias s='apt-cache search'
