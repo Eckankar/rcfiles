@@ -323,7 +323,8 @@ autocmd FileType sml setlocal makeprg=mosml\ -P\ full\ '%'
 autocmd FileType python setlocal makeprg=python\ '%'
 " }}}
 " LaTeX make code {{{
-autocmd FileType tex setlocal makeprg=pdflatex\ --shell-escape\ '%'
+autocmd FileType tex call SetTexMakeprg()
+
 " }}}
 "}}}
 " Automatically reload vimrc on changes {{{
@@ -383,6 +384,12 @@ fun! KexHighlight()
 endfun
 
 vmap <F11> :call KexHighlight()<CR>
+
+fun! SetTexMakeprg()
+    if ! filereadable('Makefile')
+        setlocal makeprg=pdflatex\ --shell-escape\ '%'
+    endif
+endfun
 " }}}
 " Plugin settings {{{
 " Textobj {{{
