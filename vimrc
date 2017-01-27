@@ -41,6 +41,9 @@ Plugin 'rust-lang/rust.vim'
 " F* support
 Plugin 'FStarLang/VimFStar'
 
+" Automatically recognize pasted text. No more setting pastemode!
+Plugin 'ConradIrwin/vim-bracketed-paste'
+
 call vundle#end()
 
 " }}}
