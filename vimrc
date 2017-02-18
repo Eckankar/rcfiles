@@ -427,6 +427,3 @@ let g:syntastic_haskell_checkers=['']
 let g:syntastic_python_checkers = ['python']
 " }}}
 " }}}
-" icfp {{{
-au BufNewFile,BufReadPost *.asl set ft=ruby
-" }}}
