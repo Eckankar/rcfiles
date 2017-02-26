@@ -2,7 +2,6 @@
 autoload -U promptinit
 promptinit
 prompt adam2 gray yellow green white
-#prompt oliver
 RPS1='[%*]'
 # }}}
 # completion {{{
