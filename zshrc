@@ -54,9 +54,7 @@ alias clear='clear; fortune'
 alias less='less -R'
 # }}}
 # fortune {{{
-if which fortune.pl >/dev/null; then
-    fortune.pl
-elif which fortune >/dev/null; then
+if which fortune >/dev/null; then
     fortune
 fi
 # }}}
