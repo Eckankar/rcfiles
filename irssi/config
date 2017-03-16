@@ -309,7 +309,7 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "Unknown";
+    real_name = "Sebastian P.";
     user_name = "sebbe";
     nick = "sebbe";
     recode_autodetect_utf8 = "yes";
