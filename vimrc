@@ -335,9 +335,6 @@ autocmd bufwritepost .vimrc source $MYVIMRC
 " }}}
 "}}}
 " Insert-mode remappings/abbreviations {{{
-" Hit <C-a> in insert mode after a bad paste (thanks absolon) {{{
-inoremap <silent> <C-a> <ESC>u:set paste<CR>.:set nopaste<CR>gi
-"}}}
 " keybinds {{{
 set pastetoggle=<F12>
 " }}}
