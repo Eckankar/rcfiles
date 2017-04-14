@@ -175,7 +175,6 @@ aliases = {
   SB = "scrollback";
   UMODE = "mode $N";
   WC = "window close";
-  GOTO = "sb goto";
   CHAT = "dcc chat";
   RUN = "SCRIPT LOAD";
   SBAR = "STATUSBAR";
