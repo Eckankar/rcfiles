@@ -421,3 +421,7 @@ let g:syntastic_haskell_checkers=['']
 let g:syntastic_python_checkers = ['python']
 " }}}
 " }}}
+" Finalization {{{
+" Disable filetype-based indentation. It usually works really poorly.
+filetype indent off
+" }}}
