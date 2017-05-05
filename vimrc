@@ -300,8 +300,6 @@ autocmd BufNewFile *.tex silent 0read ~/.vim/skeletons/latex.tex | setlocal file
 
 autocmd BufNewFile *.cpp silent call CPPSkeleton()
 
-autocmd BufReadPost *.smc setlocal bin | setlocal noeol
-
 autocmd BufReadPost *.sml silent setlocal filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
 autocmd BufReadPost *.sig silent setlocal filetype=sml tabstop=2 softtabstop=2 shiftwidth=2
 
