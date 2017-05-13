@@ -153,7 +153,7 @@ set backspace=indent,eol,start
 set wildmenu
 
 " when doing tab completion, ignore files with any of the following extensions
-set wildignore+=.log,.out,.o
+set wildignore+=.out,.o,.aux,.pdf
 
 " remember lotsa fun stuff
 set viminfo=!,'1000,f1,/1000,:1000,<1000,@1000,h,n~/.viminfo
