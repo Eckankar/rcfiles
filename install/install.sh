@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd "$(dirname "$(readlink -f $0)")/.."
 DIR=`pwd`
 
 echo Installing vim config...
