@@ -48,7 +48,7 @@ alias ack='ack --color'
 export XLIB_SKIP_ARGB_VISUALS=1
 # }}}
 # shortcuts {{{
-alias i='sudo apt-get install'
+alias i='sudo apt install'
 alias s='apt-cache search'
 alias clear='clear; fortune'
 alias less='less -R'
