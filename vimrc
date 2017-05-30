@@ -384,7 +384,7 @@ endfun
 vmap <F11> :call KexHighlight()<CR>
 
 fun! SetTexMakeprg()
-    if ! filereadable('Makefile')
+    if (expand('%:p') =~? "DIKURevy-repo") || (! filereadable('Makefile'))
         setlocal makeprg=pdflatex\ --shell-escape\ '%'
     endif
 endfun
