@@ -325,7 +325,6 @@ autocmd FileType python setlocal makeprg=python\ '%'
 " }}}
 " LaTeX make code {{{
 autocmd FileType tex call SetTexMakeprg()
-
 " }}}
 "}}}
 " Automatically reload vimrc on changes {{{
