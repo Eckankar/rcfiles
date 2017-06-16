@@ -50,6 +50,7 @@ export XLIB_SKIP_ARGB_VISUALS=1
 # shortcuts {{{
 alias i='sudo apt install'
 alias s='apt-cache search'
+alias upup='sudo apt update; sudo apt upgrade'
 alias clear='clear; fortune'
 alias less='less -R'
 # }}}
