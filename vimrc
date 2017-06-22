@@ -44,6 +44,9 @@ Plugin 'FStarLang/VimFStar'
 " Mathematica syntax
 Plugin 'rsmenon/vim-mathematica'
 
+" F# syntax
+Plugin 'fsharp/vim-fsharp'
+
 call vundle#end()
 
 " }}}
