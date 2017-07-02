@@ -47,6 +47,9 @@ Plugin 'rsmenon/vim-mathematica'
 " F# syntax
 Plugin 'fsharp/vim-fsharp'
 
+" Elixir syntax
+Plugin 'elixir-lang/vim-elixir'
+
 call vundle#end()
 
 " }}}
