@@ -1,5 +1,17 @@
 ## [Help Maintain Vundle](https://github.com/VundleVim/Vundle.vim/issues/383)
 
+## Table of Contents
+
+- [About](#about)
+- [Quick Start](#quick-start)
+- [Docs](#docs)
+- [Changelog](#changelog)
+- [People Using Vundle](#people-using-vundle)
+- [Contributors](#contributors)
+- [Inspiration & Ideas](#inspiration--ideas)
+- [Also](#also)
+- [TODO](#todo)
+
 ## About
 
 [Vundle] is short for _Vim bundle_ and is a [Vim] plugin manager.
@@ -62,7 +74,7 @@
    " plugin on GitHub repo
    Plugin 'tpope/vim-fugitive'
    " plugin from http://vim-scripts.org/vim/scripts.html
-   Plugin 'L9'
+   " Plugin 'L9'
    " Git plugin not hosted on GitHub
    Plugin 'git://git.wincent.com/command-t.git'
    " git repos on your local machine (i.e. when working on your own plugin)
@@ -72,7 +84,7 @@
    Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
    " Install L9 and avoid a Naming conflict if you've already installed a
    " different version somewhere else.
-   Plugin 'ascenator/L9', {'name': 'newL9'}
+   " Plugin 'ascenator/L9', {'name': 'newL9'}
 
    " All of your Plugins must be added before the following line
    call vundle#end()            " required
@@ -95,6 +107,8 @@
    Launch `vim` and run `:PluginInstall`
 
    To install from command line: `vim +PluginInstall +qall`
+
+5. (optional) For those using the fish shell: add `set shell=/bin/bash` to your `.vimrc`
 
 ## Docs
 
@@ -125,7 +139,7 @@ see [Vundle contributors](https://github.com/VundleVim/Vundle.vim/graphs/contrib
 * Vundle was developed and tested with [Vim] 7.3 on OS X, Linux and Windows
 * Vundle tries to be as [KISS](http://en.wikipedia.org/wiki/KISS_principle) as possible
 
-## TODO:
+## TODO
 [Vundle] is a work in progress, so any ideas and patches are appreciated.
 
 * [x] activate newly added bundles on `.vimrc` reload or after `:PluginInstall`
