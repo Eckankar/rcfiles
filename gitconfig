@@ -1,7 +1,7 @@
 [user]
-    email = Eckankar@gmail.com
+    email = spt@jobindex.dk
     name = Sebastian Paaske Tørholm
-    signingkey = D8433D786A2DA3DE
+#    signingkey = D8433D786A2DA3DE
 [color]
     ui = auto
 [core]
