@@ -6,7 +6,7 @@ hg pull
 hg update -C
 
 ./configure --without-x --disable-gui --disable-xim --disable-darwin\
-            --enable-perlinterp --enable-pythoninterp --enable-multibyte\
+            --enable-pythoninterp --enable-multibyte\
             --with-python --enable-profile
 make
 
