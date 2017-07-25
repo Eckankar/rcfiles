@@ -1,4 +1,9 @@
 #!/bin/sh
+
+# Compiles a custom vim
+# Expects the vim repo to be checked out in ~/build/vim
+# http://www.vim.org/mercurial.php
+
 cd ~/build/vim
 
 make distclean
