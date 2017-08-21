@@ -43,7 +43,6 @@ alias screen="screen -U"
 # add color to some things {{{
 alias ls='ls -h --color'
 alias grep='grep --color=auto'
-alias ack='ack --color'
 # Such as Mathematica
 export XLIB_SKIP_ARGB_VISUALS=1
 # }}}
