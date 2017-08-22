@@ -11,5 +11,8 @@ export ACK_COLOR_MATCH=red
 # GPG, please use this TTY, kthx
 export GPG_TTY=$(tty)
 
+# Work-around for composition bug with Mathematica
+export XLIB_SKIP_ARGB_VISUALS=1
+
 # Include local config
 . ~/.zshenv.local
