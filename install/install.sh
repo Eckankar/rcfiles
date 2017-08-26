@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Installs the configuration files in your home directory.
+
 cd "$(dirname "$(readlink -f $0)")/.."
 DIR=`pwd`
 
