@@ -1,5 +1,5 @@
 # Add my local ~/bin to path
-export PATH=~/bin:~/.cabal/bin:$PATH
+export PATH=~/bin:$PATH
 
 # Default editor = vim
 export EDITOR=vim
