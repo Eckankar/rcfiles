@@ -1,3 +1,4 @@
+#!/bin/sh
 DLDIR=`mktemp -d`
 MAINPKG=$DLDIR/Frederiksberg-2-2.tgz
 ICS=$DLDIR/ics.tgz
