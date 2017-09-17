@@ -4,7 +4,8 @@
 echo "Installing Haskell dependencies for vim"
 
 echo "Installing GHC..."
-sudo apt-get install ghc cabal-install
+sudo apt update
+sudo apt install -y ghc cabal-install
 
 echo "Updating cabal..."
 cabal update
