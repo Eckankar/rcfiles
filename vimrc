@@ -272,8 +272,8 @@ autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/ 
 autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/ containedin=ALL
 hi EOLWS ctermbg=red
 " }}}
-" highlight line 81 for IP {{{
-if expand("%:p") =~? "Instruktorater/IP"
+" highlight line 81 for IP / Haskell {{{
+if expand("%:p") =~? 'Instruktorater/IP\|code/Haskell'
     set listchars=tab:>-
     set list
     set textwidth=80
