@@ -19,3 +19,5 @@
     shitcommit = !git-shitcommit
 [commit]
     gpgsign = true
+[pull]
+	ff = only
