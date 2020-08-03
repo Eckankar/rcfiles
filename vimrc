@@ -53,6 +53,10 @@ Plugin 'elixir-lang/vim-elixir'
 " Vue.js syntax
 Plugin 'posva/vim-vue'
 
+" Support for editorconfig
+Plugin 'editorconfig/editorconfig-vim'
+
+
 call vundle#end()
 
 " }}}
