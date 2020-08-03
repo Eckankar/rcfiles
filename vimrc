@@ -50,6 +50,9 @@ Plugin 'fsharp/vim-fsharp'
 " Elixir syntax
 Plugin 'elixir-lang/vim-elixir'
 
+" Vue.js syntax
+Plugin 'posva/vim-vue'
+
 call vundle#end()
 
 " }}}
