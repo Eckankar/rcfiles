@@ -420,12 +420,7 @@ let python_highlight_all = 1
 " haskell {{{
 " haskell-mode
 au BufEnter *.hs compiler ghc
-"let g:haddock_browser="/usr/bin/lynx"
-" ghc-mod
-"autocmd BufWritePost *.hs GhcModCheckAndLintAsync
-"hi ghcmodType ctermbg=green ctermfg=black
-"let g:ghcmod_type_highlight = 'ghcmodType'
-"let g:syntastic_haskell_checkers=['']
+let g:haddock_browser="/usr/bin/lynx"
 " }}}
 " syntastic {{{
 " let's get a bit less pylint, please
