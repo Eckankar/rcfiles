@@ -80,4 +80,5 @@ stty -ixon -ixoff
 # utilities {{{
 # Enable autojump goodness
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh && autoload -U compinit && compinit
+[[ -s /usr/share/autojump/autojump.sh ]] && . /usr/share/autojump/autojump.sh && autoload -U compinit && compinit
 # }}}
