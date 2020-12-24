@@ -56,6 +56,8 @@ Plugin 'posva/vim-vue'
 " Support for editorconfig
 Plugin 'editorconfig/editorconfig-vim'
 
+" Fountain syntax
+Plugin 'kblin/vim-fountain'
 
 call vundle#end()
 
