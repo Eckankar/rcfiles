@@ -154,6 +154,10 @@ let perl_include_pod=1
 
 " perl needs lots of syncing...
 let perl_sync_dist=1000
+
+" enable subroutine signature support
+let perl_sub_signatures = 1
+
 " }}}
 " }}}
 "}}}
