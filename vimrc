@@ -25,8 +25,7 @@ au BufEnter *.org            call org#SetOrgFileType()
 
 " Haskell integration
 Plug 'Shougo/vimproc'
-"Plugin 'eagletmt/ghcmod-vim'
-"Plugin 'lukerandall/haskellmode-vim'
+Plug 'lukerandall/haskellmode-vim'
 
 " Syntax highlighting for Kleenex
 Plug 'diku-kmc/repg', {'rtp': 'vim/'}
@@ -51,12 +50,6 @@ Plug 'posva/vim-vue'
 
 " Support for editorconfig
 Plug 'editorconfig/editorconfig-vim'
-
-" Fountain syntax
-Plug 'kblin/vim-fountain'
-
-" Coc - Conquer of Completion; language server support etc.
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 call plug#end()
