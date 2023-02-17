@@ -1,65 +1,65 @@
 " vim:foldmethod=marker commentstring="%s
 
-" Vundle bundles {{{
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
+" vim-plug bundles {{{
+call plug#begin('~/.vim/plugged')
 
 " Let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
 " Enhanced twelf syntax highlighting
-Plugin 'ahf/twelf-syntax'
+Plug 'ahf/twelf-syntax'
 
 " Syntax checking for a number of languages
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 " git-support for vim
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Ragel syntax
-Plugin 'jneen/ragel.vim'
+Plug 'jneen/ragel.vim'
 
 " org-mode for vim
-Plugin 'hsitz/VimOrganizer'
+Plug 'hsitz/VimOrganizer'
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org            call org#SetOrgFileType()
 
 " Haskell integration
-Plugin 'Shougo/vimproc'
-Plugin 'eagletmt/ghcmod-vim'
-Plugin 'lukerandall/haskellmode-vim'
+Plug 'Shougo/vimproc'
+"Plugin 'eagletmt/ghcmod-vim'
+"Plugin 'lukerandall/haskellmode-vim'
 
 " Syntax highlighting for Kleenex
-Plugin 'diku-kmc/repg', {'rtp': 'vim/'}
+Plug 'diku-kmc/repg', {'rtp': 'vim/'}
 
 " Rust syntax
-Plugin 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim'
 
 " F* support
-Plugin 'FStarLang/VimFStar'
+Plug 'FStarLang/VimFStar'
 
 " Mathematica syntax
-Plugin 'rsmenon/vim-mathematica'
+Plug 'rsmenon/vim-mathematica'
 
 " F# syntax
-Plugin 'fsharp/vim-fsharp'
+Plug 'fsharp/vim-fsharp'
 
 " Elixir syntax
-Plugin 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir'
 
 " Vue.js syntax
-Plugin 'posva/vim-vue'
+Plug 'posva/vim-vue'
 
 " Support for editorconfig
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " Fountain syntax
-Plugin 'kblin/vim-fountain'
+Plug 'kblin/vim-fountain'
 
-call vundle#end()
+" Coc - Conquer of Completion; language server support etc.
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+call plug#end()
 
 " }}}
 " General options {{{
@@ -420,12 +420,12 @@ let python_highlight_all = 1
 " haskell {{{
 " haskell-mode
 au BufEnter *.hs compiler ghc
-let g:haddock_browser="/usr/bin/lynx"
+"let g:haddock_browser="/usr/bin/lynx"
 " ghc-mod
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
-hi ghcmodType ctermbg=green ctermfg=black
-let g:ghcmod_type_highlight = 'ghcmodType'
-let g:syntastic_haskell_checkers=['']
+"autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+"hi ghcmodType ctermbg=green ctermfg=black
+"let g:ghcmod_type_highlight = 'ghcmodType'
+"let g:syntastic_haskell_checkers=['']
 " }}}
 " syntastic {{{
 " let's get a bit less pylint, please

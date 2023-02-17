@@ -1,3 +1,4 @@
 # Ignore my nickserv login, thanks
 irssi/nickserv.auth
 vim/haskellmode.config
+vim/plugged/
