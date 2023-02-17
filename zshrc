@@ -74,6 +74,17 @@ bindkey '^[[3~' delete-char
 # History search on ^R
 bindkey '^R' history-incremental-search-backward
 
+fe() {
+    local files;
+    IFS=$'\n' files=($(find . -type f | fzf-tmux --query="$1" --multi --select-1 --exit-0));
+    [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}" < $TTY;
+    zle reset-prompt
+}
+
+zle -N fe
+[[ $- = *i* ]] && bindkey "½" fe
+export FZF_CTRL_R_OPTS="--bind 'right:accept,end:accept'"
+
 # Don't freeze my terminal with Ctrl-S, please. Kthx.
 stty -ixon -ixoff
 # }}}
@@ -85,4 +96,3 @@ stty -ixon -ixoff
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # }}}
-
