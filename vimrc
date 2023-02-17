@@ -3,9 +3,6 @@
 " vim-plug bundles {{{
 call plug#begin('~/.vim/plugged')
 
-" Let Vundle manage Vundle
-Plug 'VundleVim/Vundle.vim'
-
 " Enhanced twelf syntax highlighting
 Plug 'ahf/twelf-syntax'
 
@@ -40,7 +37,7 @@ Plug 'FStarLang/VimFStar'
 Plug 'rsmenon/vim-mathematica'
 
 " F# syntax
-Plug 'fsharp/vim-fsharp'
+Plug 'fsharp/vim-fsharp', { 'for': 'fsharp', 'do': 'make fsautocomplete' }
 
 " Elixir syntax
 Plug 'elixir-lang/vim-elixir'
@@ -51,6 +48,15 @@ Plug 'posva/vim-vue'
 " Support for editorconfig
 Plug 'editorconfig/editorconfig-vim'
 
+" FZF integration
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" cpanfile syntax
+Plug 'moznion/vim-cpanfile'
+
+" fountain file syntax
+Plug 'kblin/vim-fountain'
 
 call plug#end()
 
@@ -278,8 +284,8 @@ autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/ 
 autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/ containedin=ALL
 hi EOLWS ctermbg=red
 " }}}
-" highlight line 81 for IP / Haskell {{{
-if expand("%:p") =~? 'Instruktorater/IP\|code/Haskell'
+" highlight line 81 for IP / Haskell / SML {{{
+if expand("%:p") =~? 'Instruktorater/IP\|code/Haskell\|code/sml\|code/c/mosgame'
     set listchars=tab:>-
     set list
     set textwidth=80
@@ -418,6 +424,10 @@ let g:haddock_browser="/usr/bin/lynx"
 " syntastic {{{
 " let's get a bit less pylint, please
 let g:syntastic_python_checkers = ['python']
+" }}}
+" fzf {{{
+let g:fzf_command_prefix = 'Fzf'
+nmap ½ :FzfGFiles<CR>
 " }}}
 " }}}
 " Finalization {{{
