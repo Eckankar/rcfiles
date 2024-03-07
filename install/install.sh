@@ -36,5 +36,9 @@ mkdir -p $HOME/bin
 ln -Tfs $DIR/bin/build-vim $HOME/bin/build-vim
 ln -Tfs $DIR/bin/git-shitcommit $HOME/bin/git-shitcommit
 
+echo Installing keybase config...
+# keybase likes to install /keybase, which sometimes bugs out and causes huge filesystem delays
+sudo cp "$DIR/keybase_config.json" "/etc/keybase/config.json"
+
 echo All done!
 
