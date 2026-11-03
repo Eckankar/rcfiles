@@ -5,7 +5,11 @@ prompt adam2 gray yellow green white
 RPS1='[%*]'
 # }}}
 # completion {{{
+# completion functions are autoloaded from ~/.zfunc
+fpath+=~/.zfunc
 . ~/.zshcomplete
+# menu select is the default; kept explicit for clarity
+zstyle ':completion:*' menu select
 # }}}
 # history {{{
 HISTFILE=$HOME/.history
@@ -95,4 +99,9 @@ stty -ixon -ixoff
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# }}}
+# paths {{{
+# prepends ~/.local/bin to PATH if it's not already there (no-op if present)
+# uv/pipx create it, but only when they have, so only source it if it exists
+[[ -f $HOME/.local/bin/env ]] && . "$HOME/.local/bin/env"
 # }}}

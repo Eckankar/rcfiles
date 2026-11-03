@@ -10,3 +10,8 @@ zstyle :compinstall filename '/home/sebbe/.zshcomplete'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# source completion scripts from ~/.zsh/completion (add new ones there)
+for f in ~/.zsh/completion/*.zsh; do
+    [[ -f $f ]] && . "$f"
+done

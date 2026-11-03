@@ -15,6 +15,7 @@ echo Installing zsh config...
 ln -Tfs $DIR/zshcomplete $HOME/.zshcomplete
 ln -Tfs $DIR/zshrc $HOME/.zshrc
 ln -Tfs $DIR/zshenv $HOME/.zshenv
+ln -Tfs $DIR/zsh $HOME/.zsh
 touch $HOME/.zshenv.local
 echo Setting default shell to zsh...
 chsh -s `which zsh`

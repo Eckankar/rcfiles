@@ -1,0 +1,1 @@
+eval "$(homelab completion zsh)"
